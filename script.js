@@ -83,4 +83,39 @@
 
   window.addEventListener("scroll", setActive, { passive: true });
   setActive();
+
+  // "Download PDF" buttons -> browser print dialog (Save as PDF)
+  // Setting document.title beforehand controls the default filename Chrome/Edge
+  // suggest in the "Save as PDF" destination.
+  var pdfFilename = "Tejas_Chinchore_Resume";
+  var originalTitle = document.title;
+
+  function ensureAllRevealed() {
+    var els = document.querySelectorAll(".reveal");
+    for (var i = 0; i < els.length; i++) {
+      els[i].classList.add("is-visible");
+    }
+  }
+
+  function printResume() {
+    ensureAllRevealed();
+    document.title = pdfFilename;
+    window.print();
+  }
+
+  window.addEventListener("beforeprint", function () {
+    ensureAllRevealed();
+    document.title = pdfFilename;
+  });
+  window.addEventListener("afterprint", function () {
+    document.title = originalTitle;
+  });
+
+  var printBtns = document.querySelectorAll("[data-print-resume]");
+  for (var b = 0; b < printBtns.length; b++) {
+    printBtns[b].addEventListener("click", function (e) {
+      e.preventDefault();
+      printResume();
+    });
+  }
 })();
