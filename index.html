@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tejas Chinchore — Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Tejas Chinchore — Software Engineer with 6+ years of experience in C/C++, HPC, GPU (CUDA/ROCm), database tuning and Linux systems."
+    />
+    <meta name="theme-color" content="#0b1020" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='28' fill='white'%3ETC%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+
+  <body>
+    <!-- Background flourishes -->
+    <div class="bg-orbs" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+
+    <!-- Nav -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="#top" class="brand">
+          <span class="brand-mark">TC</span>
+          <span class="brand-name">Tejas Chinchore</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            id="themeToggle"
+            class="icon-btn"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+          >
+            <svg
+              class="icon-sun"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+            </svg>
+            <svg
+              class="icon-moon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <a class="btn btn-primary hide-sm" href="assets/resume.pdf" download>
+            Resume
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy reveal">
+            <span class="pill">
+              <span class="pill-dot"></span> Available for opportunities
+            </span>
+            <h1>
+              Hi, I'm <span class="grad">Tejas Chinchore</span> —
+              <br />Software Engineer.
+            </h1>
+            <p class="lead">
+              6+ years building performant, low-level and systems software —
+              C/C++, HPC on GPUs (CUDA &amp; AMD ROCm), database tuning, and
+              Linux tooling. Currently at
+              <strong>Amdocs</strong>.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">
+                View my work
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M13 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            </div>
+            <ul class="quick-facts">
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Pune, India
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92V21a1 1 0 0 1-1.09 1 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.21 4.1 1 1 0 0 1 4.2 3h4.09a1 1 0 0 1 1 .75 12.06 12.06 0 0 0 .66 2.65 1 1 0 0 1-.22 1.05L8.09 9.09a16 16 0 0 0 6 6l1.64-1.64a1 1 0 0 1 1.05-.22 12.06 12.06 0 0 0 2.65.66 1 1 0 0 1 .75 1z"
+                  ></path>
+                </svg>
+                +91 91450 69788
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <path d="M22 6l-10 7L2 6"></path>
+                </svg>
+                chinchoretej@gmail.com
+              </li>
+            </ul>
+          </div>
+
+          <aside class="hero-card reveal">
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <div class="dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="card-title">about.md</span>
+            </div>
+            <pre class="code"><code><span class="tok-c">// snapshot</span>
+<span class="tok-k">const</span> <span class="tok-v">tejas</span> = {
+  <span class="tok-p">role</span>: <span class="tok-s">"Software Engineer"</span>,
+  <span class="tok-p">company</span>: <span class="tok-s">"Amdocs"</span>,
+  <span class="tok-p">experience</span>: <span class="tok-n">6</span>+, <span class="tok-c">// years</span>
+  <span class="tok-p">stack</span>: [<span class="tok-s">"C"</span>, <span class="tok-s">"C++"</span>, <span class="tok-s">"CUDA"</span>, <span class="tok-s">"ROCm"</span>,
+           <span class="tok-s">"SQL"</span>, <span class="tok-s">"Shell"</span>, <span class="tok-s">"Linux"</span>],
+  <span class="tok-p">interests</span>: [<span class="tok-s">"HPC"</span>, <span class="tok-s">"GPU Arch"</span>, <span class="tok-s">"Perf tuning"</span>],
+  <span class="tok-p">open_to</span>: <span class="tok-s">"new challenging roles"</span>,
+};</code></pre>
+          </aside>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">01 — About</span>
+            <h2>Turning systems problems into measurable performance wins.</h2>
+          </header>
+          <div class="about-grid">
+            <p class="about-copy reveal">
+              I'm a Software Engineer with
+              <strong>6+ years</strong> of experience delivering technical
+              solutions across telecom platforms, database performance
+              optimization, and high‑performance computing. I enjoy going deep
+              into a stack — from application code down to CPU/GPU behavior —
+              and shipping changes that are both maintainable and fast.
+            </p>
+            <ul class="stat-grid reveal">
+              <li>
+                <span class="stat-num">6+</span>
+                <span class="stat-label">Years of experience</span>
+              </li>
+              <li>
+                <span class="stat-num">3</span>
+                <span class="stat-label">Domains: Telecom, DB, HPC</span>
+              </li>
+              <li>
+                <span class="stat-num">~7%</span>
+                <span class="stat-label">DB perf gains on tuning work</span>
+              </li>
+              <li>
+                <span class="stat-num">2</span>
+                <span class="stat-label">GPU platforms (CUDA, ROCm)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section alt">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">02 — Skills</span>
+            <h2>Tools of the trade.</h2>
+          </header>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Languages</h3>
+              <ul class="chip-list">
+                <li>C</li><li>C++</li><li>Java (basics)</li>
+                <li>JavaScript</li><li>HTML</li><li>CSS</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Systems &amp; HPC</h3>
+              <ul class="chip-list">
+                <li>GPU Architecture</li><li>CUDA</li><li>AMD ROCm</li>
+                <li>HPC (App Layer)</li><li>RTOS</li><li>Linux Drivers</li>
+                <li>Microcontrollers</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"></path></svg>
+              </div>
+              <h3>Databases</h3>
+              <ul class="chip-list">
+                <li>MySQL</li><li>PostgreSQL</li><li>Tuning &amp; Profiling</li>
+                <li>SQL</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6"></path><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              </div>
+              <h3>OS &amp; Scripting</h3>
+              <ul class="chip-list">
+                <li>Linux / Unix</li><li>Windows</li>
+                <li>Unix Shell Scripting</li><li>Bash</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+              </div>
+              <h3>DevOps &amp; Tooling</h3>
+              <ul class="chip-list">
+                <li>Git</li><li>Docker</li><li>Perforce</li>
+                <li>GDB</li><li>Make / Autotools</li>
+                <li>perf</li><li>AMD uProf</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"></path></svg>
+              </div>
+              <h3>Foundations</h3>
+              <ul class="chip-list">
+                <li>Data Structures</li><li>Algorithms</li>
+                <li>Debugging</li><li>Performance Analysis</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">03 — Experience</span>
+            <h2>Where I've built &amp; shipped.</h2>
+          </header>
+
+          <ol class="timeline">
+            <li class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-head">
+                  <h3>Software Engineer</h3>
+                  <span class="tl-when">Apr 2024 — Present</span>
+                </div>
+                <p class="tl-org">Amdocs</p>
+                <p class="tl-desc">
+                  Building and enhancing telecom-domain software with a focus
+                  on correctness, performance and maintainability across
+                  Linux-based systems.
+                </p>
+              </div>
+            </li>
+
+            <li class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-head">
+                  <h3>Software Developer</h3>
+                  <span class="tl-when">Mar 2022 — Apr 2024</span>
+                </div>
+                <p class="tl-org">
+                  Harman Connected Services <em>(Client: Amdocs)</em>
+                </p>
+                <p class="tl-desc">
+                  Contributed to the Ensemble CSM/Billing platform: feature
+                  development in C/C++, SQL data flows, and shell-based
+                  automation.
+                </p>
+              </div>
+            </li>
+
+            <li class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-head">
+                  <h3>System Engineer</h3>
+                  <span class="tl-when">Aug 2019 — Mar 2022</span>
+                </div>
+                <p class="tl-org">
+                  Tata Consultancy Services <em>(Client: AMD)</em>
+                </p>
+                <p class="tl-desc">
+                  Worked on database performance tuning and HPC application
+                  porting from CUDA to AMD ROCm — using perf / uProf, GDB,
+                  Make/Autotools and Docker.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section alt">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">04 — Projects</span>
+            <h2>Selected work.</h2>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project reveal">
+              <div class="project-top">
+                <div class="project-badge">Telecom</div>
+                <h3>Ensemble — CSM &amp; Billing</h3>
+                <p>
+                  Enhanced and developed features for a robust telecom
+                  software platform. Wrote efficient C algorithms, handled
+                  SQL-driven data flows, and automated tasks via shell
+                  scripting. Contributed to functional testing with strong
+                  business-domain understanding.
+                </p>
+              </div>
+              <ul class="tag-list">
+                <li>C / C++</li><li>SQL</li><li>Shell</li><li>Linux</li>
+              </ul>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-top">
+                <div class="project-badge">Databases</div>
+                <h3>Enterprise Workload Optimization</h3>
+                <p>
+                  Tuned MySQL Server and PostgreSQL for platform-specific
+                  workloads. Analyzed configuration parameters and used
+                  <code>perf</code> and AMD <code>uProf</code> to pinpoint
+                  bottlenecks — delivering up to
+                  <strong>~7% performance uplift</strong>. Automated the
+                  testing loop via shell scripts.
+                </p>
+              </div>
+              <ul class="tag-list">
+                <li>MySQL</li><li>PostgreSQL</li><li>perf</li>
+                <li>uProf</li><li>Shell</li>
+              </ul>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-top">
+                <div class="project-badge">HPC &amp; GPU</div>
+                <h3>HPC Applications: CUDA → ROCm</h3>
+                <p>
+                  Led the porting and optimization of HPC applications from
+                  NVIDIA CUDA to AMD ROCm for the AMD platform. Ensured
+                  seamless functionality and improved performance while
+                  managing builds with Make/Autotools and Docker, and
+                  debugging with GDB.
+                </p>
+              </div>
+              <ul class="tag-list">
+                <li>C / C++</li><li>CUDA</li><li>ROCm</li>
+                <li>GDB</li><li>Docker</li><li>Git</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">05 — Education</span>
+            <h2>Academics.</h2>
+          </header>
+
+          <div class="edu-grid">
+            <article class="edu-card reveal">
+              <div class="edu-year">2019</div>
+              <h3>P.G. Diploma in Embedded System Design</h3>
+              <p>CDAC Hyderabad</p>
+              <span class="edu-score">Score: 77%</span>
+            </article>
+            <article class="edu-card reveal">
+              <div class="edu-year">2014 — 2018</div>
+              <h3>B.E. in Electronics &amp; Telecommunication</h3>
+              <p>Pune University</p>
+              <span class="edu-score">Distinction</span>
+            </article>
+            <article class="edu-card reveal">
+              <div class="edu-year">2014</div>
+              <h3>HSC</h3>
+              <p>Pune</p>
+              <span class="edu-score">Score: 64%</span>
+            </article>
+            <article class="edu-card reveal">
+              <div class="edu-year">2012</div>
+              <h3>SSC</h3>
+              <p>Shirpur</p>
+              <span class="edu-score">Score: 90%</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section alt">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">06 — Contact</span>
+            <h2>Let's talk.</h2>
+            <p class="section-sub">
+              I'm open to interesting engineering roles and technical
+              discussions. The fastest way to reach me is email.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <a
+              class="contact-card reveal"
+              href="mailto:chinchoretej@gmail.com"
+            >
+              <div class="contact-ic">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2z"></path><path d="M22 6l-10 7L2 6"></path></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">chinchoretej@gmail.com</span>
+              </div>
+            </a>
+
+            <a class="contact-card reveal" href="tel:+919145069788">
+              <div class="contact-ic">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V21a1 1 0 0 1-1.09 1 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.21 4.1 1 1 0 0 1 4.2 3h4.09a1 1 0 0 1 1 .75 12.06 12.06 0 0 0 .66 2.65 1 1 0 0 1-.22 1.05L8.09 9.09a16 16 0 0 0 6 6l1.64-1.64a1 1 0 0 1 1.05-.22 12.06 12.06 0 0 0 2.65.66 1 1 0 0 1 .75 1z"></path></svg>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+91 91450 69788</span>
+              </div>
+            </a>
+
+            <a
+              class="contact-card reveal"
+              href="https://github.com/chinchoretej"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="contact-ic">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-1.93c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.12 3.05.73.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.39-5.27 5.67.41.36.78 1.05.78 2.12v3.15c0 .31.21.66.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/chinchoretej</span>
+              </div>
+            </a>
+
+            <a
+              class="contact-card reveal"
+              href="https://www.google.com/maps/place/Pune"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="contact-ic">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Pune, India</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-cta reveal">
+            <a class="btn btn-primary" href="mailto:chinchoretej@gmail.com">
+              Say hello
+            </a>
+            <a class="btn btn-ghost" href="assets/resume.pdf" download>
+              Download resume (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Tejas Chinchore.</span>
+        <span class="muted">Built with HTML, CSS &amp; a bit of JS.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
