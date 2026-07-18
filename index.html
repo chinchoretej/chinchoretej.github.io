@@ -101,8 +101,10 @@
             <p class="lead">
               6+ years building performant, low-level and systems software —
               C/C++, HPC on GPUs (CUDA &amp; AMD ROCm), database tuning, and
-              Linux tooling. Currently at
-              <strong>Amdocs</strong>.
+              Linux tooling. Currently at <strong>Amdocs</strong>, and shipping
+              production-quality Kotlin/Compose Android apps on the side,
+              built AI‑native with <strong>Cursor</strong> and
+              <strong>Claude</strong>.
             </p>
             <div class="hero-cta">
               <a href="#projects" class="btn btn-primary">
@@ -192,9 +194,10 @@
   <span class="tok-p">role</span>: <span class="tok-s">"Software Engineer"</span>,
   <span class="tok-p">company</span>: <span class="tok-s">"Amdocs"</span>,
   <span class="tok-p">experience</span>: <span class="tok-n">6</span>+, <span class="tok-c">// years</span>
-  <span class="tok-p">stack</span>: [<span class="tok-s">"C"</span>, <span class="tok-s">"C++"</span>, <span class="tok-s">"CUDA"</span>, <span class="tok-s">"ROCm"</span>,
-           <span class="tok-s">"SQL"</span>, <span class="tok-s">"Shell"</span>, <span class="tok-s">"Linux"</span>],
-  <span class="tok-p">interests</span>: [<span class="tok-s">"HPC"</span>, <span class="tok-s">"GPU Arch"</span>, <span class="tok-s">"Perf tuning"</span>],
+  <span class="tok-p">stack</span>: [<span class="tok-s">"C"</span>, <span class="tok-s">"C++"</span>, <span class="tok-s">"Kotlin"</span>, <span class="tok-s">"CUDA"</span>,
+           <span class="tok-s">"ROCm"</span>, <span class="tok-s">"Compose"</span>, <span class="tok-s">"SQL"</span>, <span class="tok-s">"Linux"</span>],
+  <span class="tok-p">aiNative</span>: [<span class="tok-s">"Cursor"</span>, <span class="tok-s">"Claude"</span>, <span class="tok-s">"MCP"</span>, <span class="tok-s">"Rules"</span>],
+  <span class="tok-p">interests</span>: [<span class="tok-s">"HPC"</span>, <span class="tok-s">"GPU Arch"</span>, <span class="tok-s">"Android"</span>],
   <span class="tok-p">open_to</span>: <span class="tok-s">"new challenging roles"</span>,
 };</code></pre>
           </aside>
@@ -215,7 +218,12 @@
               solutions across telecom platforms, database performance
               optimization, and high‑performance computing. I enjoy going deep
               into a stack — from application code down to CPU/GPU behavior —
-              and shipping changes that are both maintainable and fast.
+              and shipping changes that are both maintainable and fast. In my
+              spare time I build and ship
+              <strong>Kotlin / Jetpack Compose Android apps</strong>, developed
+              AI‑natively with <strong>Cursor</strong> and <strong>Claude</strong>
+              — leaning on MCP servers, custom rules and agent skills to
+              stay fast without sacrificing craft.
             </p>
             <ul class="stat-grid reveal">
               <li>
@@ -224,7 +232,7 @@
               </li>
               <li>
                 <span class="stat-num">3</span>
-                <span class="stat-label">Domains: Telecom, DB, HPC</span>
+                <span class="stat-label">Android apps shipped (AI‑built)</span>
               </li>
               <li>
                 <span class="stat-num">~7%</span>
@@ -313,6 +321,32 @@
               <ul class="chip-list">
                 <li>Data Structures</li><li>Algorithms</li>
                 <li>Debugging</li><li>Performance Analysis</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6z"></path><path d="M19 15l.9 2.1 2.1.9-2.1.9L19 21l-.9-2.1-2.1-.9 2.1-.9z"></path><path d="M5 15l.7 1.7 1.7.7-1.7.7L5 19.8l-.7-1.7-1.7-.7 1.7-.7z"></path></svg>
+              </div>
+              <h3>AI-Assisted Development</h3>
+              <ul class="chip-list">
+                <li>Cursor</li><li>Claude</li><li>ChatGPT</li>
+                <li>LLMs</li><li>MCP Servers</li><li>Cursor Rules</li>
+                <li>Agent Skills</li><li>Prompt Engineering</li>
+                <li>AI Code Review</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"></rect><line x1="10" y1="18" x2="14" y2="18"></line></svg>
+              </div>
+              <h3>Android &amp; Mobile</h3>
+              <ul class="chip-list">
+                <li>Kotlin</li><li>Jetpack Compose</li><li>Material 3</li>
+                <li>Firebase</li><li>Firestore</li><li>Google Sign-In</li>
+                <li>WorkManager</li><li>Hilt</li><li>ARCore</li>
+                <li>ML Kit</li><li>CameraX</li><li>Gradle</li>
               </ul>
             </article>
           </div>
@@ -443,6 +477,66 @@
               <ul class="tag-list">
                 <li>C / C++</li><li>CUDA</li><li>ROCm</li>
                 <li>GDB</li><li>Docker</li><li>Git</li>
+              </ul>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-top">
+                <div class="project-badge">Android · AI‑built</div>
+                <h3>FinancialHub — Personal Finance</h3>
+                <p>
+                  Native Android app (Kotlin + Jetpack Compose) that succeeds
+                  my earlier web version — home‑loan tracker, expenses, bill
+                  reminders, SIP/RD investments, insurance vault and Google
+                  Drive document uploads. Ships an <strong>on‑device SMS
+                  parser</strong> that reads incoming bank alerts and pre‑fills
+                  expense entries. Firebase Auth/Firestore backend with a
+                  strict email allowlist. Designed and built end‑to‑end with
+                  <em>Cursor + Claude</em>.
+                </p>
+              </div>
+              <ul class="tag-list">
+                <li>Kotlin</li><li>Compose</li><li>Firebase</li>
+                <li>Google Drive API</li><li>DataStore</li><li>SMS Parser</li>
+              </ul>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-top">
+                <div class="project-badge">Android + AR · AI‑built</div>
+                <h3>MyBaby — Baby-Care Companion</h3>
+                <p>
+                  A Kotlin/Compose baby‑care app for parents: IAP‑standard
+                  vaccination schedule with smart reminders, WHO‑standard
+                  growth tracker, <strong>AR‑based height measurement</strong>
+                  (ARCore + CameraX + ML Kit pose detection), disease &amp;
+                  medication tracking with check‑in reminders, memory
+                  timeline, PDF export, an in‑app APK updater and Firebase
+                  family sharing.
+                </p>
+              </div>
+              <ul class="tag-list">
+                <li>Kotlin</li><li>Compose</li><li>ARCore</li>
+                <li>CameraX</li><li>ML Kit</li><li>Firebase</li>
+                <li>WorkManager</li>
+              </ul>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-top">
+                <div class="project-badge">Android · On‑device AI</div>
+                <h3>ShortsForge — Shorts Maker</h3>
+                <p>
+                  A Kotlin/Compose Android app for generating short‑form video
+                  content on‑device. Uses <strong>Sherpa‑onnx (Piper TTS)</strong>
+                  for offline voice synthesis, WorkManager foreground services
+                  for long‑running renders and Hilt for DI. Built AI‑natively
+                  with Cursor + Claude.
+                </p>
+              </div>
+              <ul class="tag-list">
+                <li>Kotlin</li><li>Compose</li><li>Hilt</li>
+                <li>WorkManager</li><li>Sherpa‑onnx</li><li>Piper TTS</li>
               </ul>
             </article>
           </div>
