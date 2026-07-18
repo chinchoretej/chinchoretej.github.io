@@ -1,0 +1,48 @@
+name: Build resume PDF
+
+# Rebuild assets/resume.pdf from the current site whenever any page source
+# changes on `main`, and commit the fresh PDF back. Users clicking
+# "Download PDF" on the site always get a PDF that matches the live page.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "assets/resume.pdf"
+      - "README.md"
+      - ".gitignore"
+      - "LICENSE"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-resume-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies (incl. Chromium)
+        run: npm install --no-audit --no-fund
+
+      - name: Build resume PDF
+        run: npm run build:resume
+
+      - name: Commit updated PDF (if changed)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: rebuild resume.pdf [skip ci]"
+          file_pattern: "assets/resume.pdf"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"

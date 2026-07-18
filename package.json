@@ -1,0 +1,13 @@
+{
+  "name": "chinchoretej-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio for Tejas Chinchore. Also builds a print-ready resume.pdf from the site.",
+  "type": "module",
+  "scripts": {
+    "build:resume": "node scripts/build-resume.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "23.11.1"
+  }
+}
